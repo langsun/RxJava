@@ -10,11 +10,16 @@ import android.widget.TextView;
 import rx.Observable;
 import rx.Subscriber;
 import rx.functions.Action1;
-
+/**
+ * Created by sun on 16/8/19.
+ *
+ * 出自：http://www.cnblogs.com/Fndroid/p/5762523.html
+ */
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private TextView mTextView1;
     private TextView mTextView2;
     private TextView mTextView3;
+    private TextView mTextView4;
     private final String TAG = "MainActivity";
 
     @Override
@@ -39,6 +44,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mTextView2.setOnClickListener(this);
         mTextView3 = (TextView) findViewById(R.id.text_view3);
         mTextView3.setOnClickListener(this);
+        mTextView4 = (TextView) findViewById(R.id.text_view4);
+        mTextView4.setOnClickListener(this);
     }
 
 
@@ -149,6 +156,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.text_view3:
                 Intent intent3 = new Intent(MainActivity.this,FilterActivity.class);
                 startActivity(intent3);
+                break;
+            case R.id.text_view4:
+                Intent intent4 = new Intent(MainActivity.this,ThreadActivity.class);
+                startActivity(intent4);
                 break;
         }
     }
