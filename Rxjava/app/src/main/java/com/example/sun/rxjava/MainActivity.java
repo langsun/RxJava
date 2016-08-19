@@ -14,6 +14,7 @@ import rx.functions.Action1;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private TextView mTextView1;
     private TextView mTextView2;
+    private TextView mTextView3;
     private final String TAG = "MainActivity";
 
     @Override
@@ -36,6 +37,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mTextView1.setOnClickListener(this);
         mTextView2 = (TextView) findViewById(R.id.text_view2);
         mTextView2.setOnClickListener(this);
+        mTextView3 = (TextView) findViewById(R.id.text_view3);
+        mTextView3.setOnClickListener(this);
     }
 
 
@@ -142,6 +145,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.text_view2:
                 Intent intent2 = new Intent(MainActivity.this,ChangeActivity.class);
                 startActivity(intent2);
+                break;
+            case R.id.text_view3:
+                Intent intent3 = new Intent(MainActivity.this,FilterActivity.class);
+                startActivity(intent3);
                 break;
         }
     }

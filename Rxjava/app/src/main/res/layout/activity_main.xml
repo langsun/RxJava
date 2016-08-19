@@ -30,4 +30,12 @@
         android:gravity="center"
         android:layout_marginTop="20dp"
         android:text="变换操作（map、flatMap）"/>
+    <TextView
+        android:id="@+id/text_view3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#00acff"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="过滤操作（take、debounce）"/>
 </LinearLayout>
