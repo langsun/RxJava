@@ -14,6 +14,8 @@ import rx.functions.Action1;
  * Created by sun on 16/8/19.
  *
  * 出自：http://www.cnblogs.com/Fndroid/p/5762523.html
+ * 
+ * 相关：http://gank.io/post/560e15be2dca930e00da1083
  */
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private TextView mTextView1;
